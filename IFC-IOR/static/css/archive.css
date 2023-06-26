@@ -1,0 +1,55 @@
+.caption-center {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-image: url("/IFC-IOR/static/img/bg.jpg");
+    background-color: navy;
+    background-size: cover;
+    color: #fff;
+}
+
+footer {
+    margin-bottom: 0 !important;
+}
+
+.card {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.year {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}

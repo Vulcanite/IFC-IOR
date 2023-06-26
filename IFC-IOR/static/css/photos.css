@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .card {
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+}
+
+.card {
+    width: 75%;
+    height: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+.caption-center {
+    text-align: center;
+}
+body {
+    background-image: url("/IFC-IOR/static/img/bg.jpg");
+    background-size: cover;
+    color: #fff;
+}
+.modal-body {
+    padding: 0rem !important;
+}

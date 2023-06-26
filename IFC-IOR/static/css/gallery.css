@@ -1,0 +1,95 @@
+.card-custom {
+    height: 22vh;
+    overflow: hidden;
+}
+
+.caption-center {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: navy;
+    background-size: cover;
+    color: #fff;
+}
+
+.card-img-top {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.modal-body {
+    padding: 0rem !important;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-bottom: 0 !important;
+}
+
+.card-row-wrapper {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("/IFC-IOR/static/img/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .card {
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (min-width: 767px) {
+    .marquee-wrapper {
+        overflow: hidden;
+    }
+
+    .year-item {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 0 10px;
+        /* Adjust the padding as needed */
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .card-row {
+        display: flex;
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .card-row {
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
