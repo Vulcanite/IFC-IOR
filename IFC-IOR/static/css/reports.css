@@ -1605,3 +1605,23 @@ figure img {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,25,93,1) 24%, rgba(0,212,255,1) 100%);
 }
+
+#asu {
+    background: white !important;
+}
+
+#asu .reportheading{
+    color: black !important;
+}
+
+#mmsu {
+    background: white !important;
+}
+
+#mmsu .reportheading{
+    color: black !important;
+}
+
+.reportcircle {
+    background: rgb(27, 132, 189) !important;
+}

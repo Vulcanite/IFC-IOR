@@ -6,38 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="/IFC-IOR/static/css/styles.css" />
   <title>Welcome to IFC-IOR Website</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
-    .card-custom {
-      height: 30vh;
-      overflow: hidden;
-    }
+  .card-custom {
+    height: 30vh;
+    overflow: hidden;
+  }
 
-    .caption-center {
-      color: black;
-      text-align: center;
-    }
+  .caption-center {
+    color: black;
+    text-align: center;
+  }
 
-    .card-img-top {
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
+  .card-img-top {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
 
-    .modal-body {
-      padding: 0rem !important;
-    }
+  .modal-body {
+    padding: 0rem !important;
+  }
 
-    .card-img-top:hover {
-      transform: scale(1.1);
-    }
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
 
-    footer {
-      margin-bottom: 0 !important;
-    }
+  footer {
+    margin-bottom: 0 !important;
+  }
 </style>
+
 <body>
   <div class="first-container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-3 py-2 mb-2">
@@ -178,7 +179,7 @@
   <div class="container">
     <ul class="cards">
       <li class="cards_item">
-        <div class="card">
+        <div class="card-custom">
           <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div> -->
           <div class="card_content">
             <span class="card_title value" akhi="42"> 0</span>
@@ -191,7 +192,7 @@
         </div>
       </li>
       <li class="cards_item">
-        <div class="card">
+        <div class="card-custom">
           <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div> -->
           <div class="card_content ">
             <span class="card_title value" akhi="25">0</span>
@@ -204,7 +205,7 @@
         </div>
       </li>
       <li class="cards_item">
-        <div class="card">
+        <div class="card-custom">
           <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div> -->
           <div class="card_content">
             <span class="card_title value" akhi="12">0</span>
@@ -217,7 +218,7 @@
         </div>
       </li>
       <li class="cards_item">
-        <div class="card">
+        <div class="card-custom">
           <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div> -->
           <div class="card_content">
             <span class="card_title value" akhi="500">0</span>
@@ -252,7 +253,7 @@
           <li class="cards_item">
 
             <h1>Annual</h1>
-            <a href="reports.html#asu">
+            <a href="/IFC-IOR/reports.html#asu">
               <div class="card circle">
 
                 <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div> -->
@@ -266,7 +267,7 @@
           </li>
           <li class="cards_item">
             <h1>Half Yearly</h1>
-            <a href="reports.html#hysu">
+            <a href="/IFC-IOR/reports.html#hysu">
               <div class="card circle">
                 <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div> -->
                 <div class="card_content">
@@ -278,7 +279,7 @@
           </li>
           <li class="cards_item">
             <h1>Monthly</h1>
-            <a href="reports.html#mmsu">
+            <a href="/IFC-IOR/reports.html#mmsu">
               <div class="card circle">
                 <div class="card_content">
                   <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div> -->
@@ -291,7 +292,7 @@
           </li>
           <li class="cards_item">
             <h1>Weekly</h1>
-            <a href="reports.html#wmsu">
+            <a href="/IFC-IOR/reports.html#wmsu">
               <div class="card circle">
                 <div class="card_content">
                   <!-- <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div> -->
@@ -713,11 +714,9 @@
                 <div class="marquee">
                   <figure>
                     <a href="https://www.bobpigo.org/"><img src="/IFC-IOR/static/img/cli/BoBP.jpg" alt="BoBP"></a>
-
                   </figure>
                   <figure>
-                    <a href="https://www.crimario.eu/"><img src="/IFC-IOR/static/img/cli/CRIMARIO.jpg"
-                        alt="CRIMARIO"></a>
+                    <a href="https://www.crimario.eu/"><img src="/IFC-IOR/static/img/cli/CRIMARIO.jpg" alt="CRIMARIO"></a>
 
                   </figure>
                   <figure>
@@ -1004,19 +1003,36 @@
     </article>
   </div>
 
+  <div class="video-section">
+    <h2>Featured Videos</h2>
+    <div class="video-grid">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/g5TjcurxtHo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <footer class="footer-distributed">
 
     <div class="footer-right" id="contact">
-
       <h1>IFC-<span>IOR</span></h1>
 
       <p class="footer-center footer-company-name">IFC-IOR © 2023</p>
+
+
     </div>
 
     <div class="footer-center">
 
       <div>
+        <!-- <div class="centered-heading">
+          <h1 >IFC-<span>IOR</span></h1>
+    
+          <p class="footer-center footer-company-name">IFC-IOR © 2023</p>
+        </div> -->
         <i class="fa fa-map-marker"></i>
         <p><span>Director IFC-IOR: Captain Rohit Bajpai</span> Address: Information Fusion Centre - Indian Ocean Region,
           <span>Sohna Road, Sector 33, Gurugram 122001, India</span>
@@ -1051,6 +1067,7 @@
     </div>
 
   </footer>
+  <script src="/IFC-IOR/static/js/common.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6a4e27ec5a.js" crossorigin="anonymous"></script>
@@ -1071,6 +1088,8 @@
       text.style.top = value * 1 + 'px';
     })
   </script>
+  <script src="/IFC-IOR/static/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script>
     $(document).scroll(function () {
@@ -1081,7 +1100,6 @@
       }
     });	  
   </script>
-  <script src="/IFC-IOR/static/js/index.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var boxes = document.getElementsByClassName("box");
@@ -1091,4 +1109,5 @@
     });
   </script>
 </body>
+
 </html>
