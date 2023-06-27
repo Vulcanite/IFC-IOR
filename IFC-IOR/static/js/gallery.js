@@ -7,30 +7,34 @@ var Gallery = function() {
           return response.json();
         })
         .then(function(galleryData) {
-          for (var year in galleryData) {
-            // Create header row
-            
+          const years = Object.keys(galleryData).reverse();
+          for (var year of years) {
             var headerRow = document.createElement("div");
             headerRow.className = "row my-2";
             var headerColumn = document.createElement("div");
-            headerColumn.className = "col-12 text-center";
-            var yearText = document.createElement("h3");
+            headerColumn.className = "col-12 stretched-column text-center";
+            var yearText = document.createElement("h2");
             yearText.textContent = year;
-            headerColumn.appendChild(yearText);
+
+            var anchor = document.createElement("a");
+            anchor.href = `/IFC-IOR/years/${year}.html`;
+            anchor.appendChild(yearText);
+
+            headerColumn.appendChild(anchor);
             headerRow.appendChild(headerColumn);
             container.appendChild(headerRow);
 
             // Create images row
             var imagesRow = document.createElement("div");
-            imagesRow.className = "row my-2";
+            imagesRow.className = "my-2 slider";
 
             var images = galleryData[year];
             for (var i = 0; i < images.length; i++) {
               var imageColumn = document.createElement("div");
-              imageColumn.className = "col-md-6 col-lg-3";
+              imageColumn.className = "marquee-container";
 
               var card = document.createElement("div");
-              card.className = "card my-2";
+              card.className = "card my-2 mx-2";
 
               var img = document.createElement("img");
               img.src = images[i][1];
@@ -38,7 +42,7 @@ var Gallery = function() {
               img.className = "card-img-top";
 
               var caption = document.createElement("div");
-              caption.className = "card-body";
+              caption.className = "card-body text-center";
               caption.textContent = images[i][0];
 
               card.appendChild(img);
@@ -65,20 +69,15 @@ var Gallery = function() {
                 modalImg.alt = this.querySelector("img").alt;
                 modalImg.style.maxHeight = "90%";
                 modalImg.style.maxWidth = "90%";
-
                 modal.appendChild(modalImg);
-
-                // Add click event to close modal
                 modal.addEventListener("click", function() {
                   modal.remove();
                 });
-
                 document.body.appendChild(modal);
               });
 
               imagesRow.appendChild(imageColumn);
             }
-
             container.appendChild(imagesRow);
           }
         })

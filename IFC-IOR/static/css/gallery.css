@@ -23,10 +23,6 @@ body {
     padding: 0rem !important;
 }
 
-.card-img-top:hover {
-    transform: scale(1.1);
-}
-
 footer {
     margin-bottom: 0 !important;
 }
@@ -50,46 +46,39 @@ footer {
     }
 }
 
-@media (min-width: 767px) {
-    .marquee-wrapper {
-        overflow: hidden;
+body {
+    background-image: url("/IFC-IOR/static/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
     }
 
-    .year-item {
-        display: inline-block;
-        white-space: nowrap;
-        padding: 0 10px;
-        /* Adjust the padding as needed */
+    100% {
+        transform: translateX(-100%);
     }
+}
 
-    @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
+.slider:hover {
+    animation-play-state: paused;
+}
 
-        100% {
-            transform: translateX(-100%);
-        }
-    }
+.slider {
+    display: inline-flex;
+    animation: 25s slide infinite linear;
+    position: relative;
+}
 
-    .card-row {
-        display: flex;
-        animation: marquee 20s linear infinite;
-    }
+.card {
+    width: 20rem;
+    border-radius: 0;
+    flex: 0 0 25rem;
+}
 
-    @keyframes marquee {
-        0% {
-            transform: translateX(100%);
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-    .card-row {
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
+body {
+    overflow-x: hidden;
 }

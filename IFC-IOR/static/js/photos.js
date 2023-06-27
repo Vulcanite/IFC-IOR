@@ -20,7 +20,7 @@ var Photos = function() {
             }
 
             var col = $('<div>').addClass('col-md-3 p-0 my-2 text-center');
-            var card = $('<div>').addClass('card');
+            var card = $('<div>').addClass('card mx-auto my-auto');
             var cardImage = $('<img>').addClass('card-img-top').attr('src', imagePath).attr('alt', caption).attr('data-index', i);
             var cardBody = $('<div>').addClass('card-body');
             var cardCaption = $('<h6>').addClass('card-title caption-center').text(caption);

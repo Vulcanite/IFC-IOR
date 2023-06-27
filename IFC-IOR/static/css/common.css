@@ -1,0 +1,54 @@
+.back-to-top {
+    background-color: #ddd;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #444;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+
+}
+
+.buttonupr {
+    display: inline-block;
+    background-color: #A8DADC;
+    color: #0a2a43;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 1;
+    /* visibility: hidden; */
+    z-index: 10;
+}
+
+.buttonupr::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+.buttonupr:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.buttonupr:active {
+    background-color: #555;
+}
+
+.buttonupr.show {
+    opacity: 1;
+    visibility: visible;
+}
