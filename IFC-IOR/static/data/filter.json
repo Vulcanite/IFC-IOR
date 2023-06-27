@@ -1,37 +1,34 @@
 {
-    "Asia": [
-        ["Caption 1", "/IFC-IOR/static/img/2019/gallery1.jpeg"],
-        ["Caption 2", "/IFC-IOR/static/img/2019/gallery2.jpeg"],
-        ["Caption 3", "/IFC-IOR/static/img/2019/gallery3.jpg"],
-        ["Caption 4", "/IFC-IOR/static/img/2019/gallery4.jpeg"],
-        ["Caption 5", "/IFC-IOR/static/img/2019/gallery5.jpg"]
+    "2019": [
+        ["Caption 1", "/IFC-IOR/static/img/2019/gallery1.jpeg", "America"],
+        ["Caption 2", "/IFC-IOR/static/img/2019/gallery2.jpeg", "America"],
+        ["Caption 3", "/IFC-IOR/static/img/2019/gallery3.jpg", "Mauritius"],
+        ["Caption 4", "/IFC-IOR/static/img/2019/gallery4.jpeg", "UK"],
+        ["Caption 3", "/IFC-IOR/static/img/2019/gallery3.jpg", "Mauritius"],
+        ["Caption 4", "/IFC-IOR/static/img/2019/gallery4.jpeg", "UK"]
     ],
-    "Mauritius": [
-        ["Caption 1", "/IFC-IOR/static/img/2020/gallery1.jpeg"],
-        ["Caption 2", "/IFC-IOR/static/img/2020/gallery2.jpeg"],
-        ["Caption 3", "/IFC-IOR/static/img/2020/gallery3.jpg"],
-        ["Caption 4", "/IFC-IOR/static/img/2020/gallery4.jpeg"],
-        ["Caption 5", "/IFC-IOR/static/img/2020/gallery5.jpg"]
+    "2020": [
+        ["Caption 1", "/IFC-IOR/static/img/2020/gallery1.jpeg", "America"],
+        ["Caption 2", "/IFC-IOR/static/img/2020/gallery2.jpeg", "UK"],
+        ["Caption 3", "/IFC-IOR/static/img/2020/gallery3.jpg", "Mauritius"],
+        ["Caption 4", "/IFC-IOR/static/img/2020/gallery4.jpeg", "America"]
     ],
     "2021": [
-        ["Caption 1", "/IFC-IOR/static/img/2021/gallery1.jpeg"],
-        ["Caption 2", "/IFC-IOR/static/img/2021/gallery2.jpeg"],
-        ["Caption 3", "/IFC-IOR/static/img/2021/gallery3.jpg"],
-        ["Caption 4", "/IFC-IOR/static/img/2021/gallery4.jpeg"],
-        ["Caption 5", "/IFC-IOR/static/img/2021/gallery5.jpg"]
+        ["Caption 1", "/IFC-IOR/static/img/2021/gallery1.jpeg", "America"],
+        ["Caption 2", "/IFC-IOR/static/img/2021/gallery2.jpeg", "UK"],
+        ["Caption 3", "/IFC-IOR/static/img/2021/gallery3.jpg", "Mauritius"],
+        ["Caption 4", "/IFC-IOR/static/img/2021/gallery4.jpeg", "America"]
     ],
     "2022": [
-        ["Caption 1", "/IFC-IOR/static/img/2022/gallery1.jpeg"],
-        ["Caption 2", "/IFC-IOR/static/img/2022/gallery2.jpeg"],
-        ["Caption 3", "/IFC-IOR/static/img/2022/gallery3.jpg"],
-        ["Caption 4", "/IFC-IOR/static/img/2022/gallery4.jpeg"],
-        ["Caption 5", "/IFC-IOR/static/img/2022/gallery5.jpg"]
+        ["Caption 1", "/IFC-IOR/static/img/2022/gallery1.jpeg", "UK"],
+        ["Caption 2", "/IFC-IOR/static/img/2022/gallery2.jpeg", "UK"],
+        ["Caption 3", "/IFC-IOR/static/img/2022/gallery3.jpg", "Mauritius"],
+        ["Caption 4", "/IFC-IOR/static/img/2022/gallery4.jpeg", "America"]
     ],
     "2023": [
-        ["Caption 1", "/IFC-IOR/static/img/2023/gallery1.jpeg"],
-        ["Caption 2", "/IFC-IOR/static/img/2023/gallery2.jpeg"],
-        ["Caption 3", "/IFC-IOR/static/img/2023/gallery3.jpg"],
-        ["Caption 4", "/IFC-IOR/static/img/2023/gallery4.jpeg"],
-        ["Caption 5", "/IFC-IOR/static/img/2023/gallery5.jpg"]
+        ["Caption 1", "/IFC-IOR/static/img/2023/gallery1.jpeg", "America"],
+        ["Caption 2", "/IFC-IOR/static/img/2023/gallery2.jpeg", "Mauritius"],
+        ["Caption 3", "/IFC-IOR/static/img/2023/gallery3.jpg", "UK"],
+        ["Caption 4", "/IFC-IOR/static/img/2023/gallery4.jpeg", "America"]
     ]
 }

@@ -16,6 +16,8 @@ body {
     background-image: url("/IFC-IOR/static/img/bg.jpg");
     background-color: navy;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #fff;
 }
 

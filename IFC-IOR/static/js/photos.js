@@ -1,5 +1,37 @@
 var Photos = function() {
   var currentImageIndex = 0; // Track the current image index in the modal carousel
+  
+  function filterAndRepositionCards(category) {
+    $('.card').each(function() {
+      var card = $(this);
+      var cardCategory = card.attr('data-category');
+  
+      if (category === 'all' || cardCategory === category) {
+        card.fadeIn('fast');
+      } else {
+        card.fadeOut('fast');
+      }
+    });
+  
+    var visibleCards = $('.card:visible');
+    var row = null;
+    $('#gallery').empty();
+  
+    visibleCards.each(function(index) {
+      if (index % 4 === 0) {
+        row = $('<div>').addClass('row');
+        $('#gallery').append(row);
+      }
+  
+      var card = $(this);
+      card.removeClass('col-md-3 p-0 my-2 text-center');
+      card.addClass('col-md-3 p-0 my-2 text-center');
+      row.append(card);
+  
+      card.hide().delay(index * 100).fadeIn('fast');
+    });
+  }
+  
 
   return {
     init: function() {
@@ -13,13 +45,14 @@ var Photos = function() {
           for (var i = 0; i < items.length; i++) {
             var caption = items[i][0];
             var imagePath = items[i][1];
+            var category = items[i][2];
 
             if (i % 4 === 0) {
               row = $('<div>').addClass('row');
               $('#gallery').append(row);
             }
 
-            var col = $('<div>').addClass('col-md-3 p-0 my-2 text-center');
+            var col = $('<div>').addClass('col-md-3 p-0 my-2 text-center').attr('data-category', category);;
             var card = $('<div>').addClass('card mx-auto my-auto');
             var cardImage = $('<img>').addClass('card-img-top').attr('src', imagePath).attr('alt', caption).attr('data-index', i);
             var cardBody = $('<div>').addClass('card-body');
@@ -54,7 +87,6 @@ var Photos = function() {
               carouselImage.append(image);
               imageModal.find('.carousel-inner').append(carouselImage);
             }
-
             // Show the modal and set the initial active carousel item
             imageModal.modal('show');
             imageModal.find('.carousel-item').first().addClass('active');
@@ -62,6 +94,13 @@ var Photos = function() {
         })
         .catch(error => {
           console.error('Error:', error);
+        });
+
+        $('#filterButtons button').click(function() {
+          $('#filterButtons button').removeClass('active');
+          $(this).addClass('active');
+          filter = $(this).attr('data-filter');
+          filterAndRepositionCards(filter);
         });
     }
   };

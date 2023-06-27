@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20rem;
+}
+
+body {
+    background-image: url("/IFC-IOR/static/img/bg.jpg");
+    background-color: navy;
+    background-size: cover;
+    color: #fff;
+}
+
+.modal-dark-overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as desired */
+}
